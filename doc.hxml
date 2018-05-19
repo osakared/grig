@@ -1,0 +1,5 @@
+-D doc-gen
+--macro include('grig')
+--no-output
+-lib grig.pitch
+-xml bin/doc.xml

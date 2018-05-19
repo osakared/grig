@@ -1,0 +1,43 @@
+# This will run on Travis' 'new' container-based infrastructure
+sudo: false
+dist: trusty
+
+language: haxe
+
+# Blacklist
+branches:
+  only:
+    - master
+
+haxe:
+  - "4.0.0-preview.3"
+  - development
+
+# Environment variables
+env:
+  global:
+    - GH_REPO_NAME: grig
+    - GH_REPO_REF: github.com/osakared/grig.git
+
+install:
+  - haxelib install dox
+
+# Install dependencies
+addons:
+  apt:
+    packages:
+      - doxygen
+      - doxygen-doc
+      - doxygen-latex
+      - doxygen-gui
+      - graphviz
+
+# Build your code e.g. by calling make
+script:
+  - make
+
+# Generate and deploy documentation
+after_success:
+  - cd $TRAVIS_BUILD_DIR
+  - chmod +x generateDocumentationAndDeploy.sh
+  - ./generate_documentation.sh

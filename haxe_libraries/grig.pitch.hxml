@@ -1,0 +1,3 @@
+# @install: lix --silent download "gh://github.com/osakared/grig.pitch#ddafe39af7e8437274150c157700847d452687f9" into grig.pitch/0.0.0/github/ddafe39af7e8437274150c157700847d452687f9
+-D grig.pitch=0.0.0
+-cp ${HAXE_LIBCACHE}/grig.pitch/0.0.0/github/ddafe39af7e8437274150c157700847d452687f9/src

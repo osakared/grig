@@ -1,17 +1,11 @@
 # This will run on Travis' 'new' container-based infrastructure
-sudo: false
+sudo: required
 dist: trusty
-
-language: haxe
 
 # Blacklist
 branches:
   only:
     - master
-
-haxe:
-  - "4.0.0-preview.3"
-  - development
 
 # Environment variables
 env:
@@ -19,15 +13,17 @@ env:
     - GH_REPO_NAME: grig
     - GH_REPO_REF: github.com/osakared/grig.git
 
+language: node_js
+node_js: 6
+
+os:
+  - linux
+  - osx
+  
 install:
-  - haxelib install dox
+  - npm install -g lix
 
-# Build your code e.g. by calling make
 script:
+  - lix download
   - haxe doc.hxml
-
-# Generate and deploy documentation
-after_success:
-  - cd $TRAVIS_BUILD_DIR
-  - chmod +x generateDocumentationAndDeploy.sh
   - ./generate_documentation.sh

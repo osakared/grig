@@ -89,6 +89,7 @@ if [ -d "api" ] && [ -f "api/index.html" ]; then
     # GitHub is smart enough to know which files have changed and which files have
     # stayed the same and will only update the changed files.
     git add api
+    git add *.md
 
     # Commit the added files with a title and description containing the Travis CI
     # build number and the GitHub commit reference that issued this build.

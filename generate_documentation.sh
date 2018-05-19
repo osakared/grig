@@ -74,7 +74,7 @@ rm -rf api
 ##### Generate the Doxygen code documentation and log the output.          #####
 echo 'Generating documentation via dox...'
 # Redirect both stderr and stdout to the log file AND the console.
-haxelib run dox -i bin -o api
+haxelib run dox -i ../../bin -o api
 
 ################################################################################
 ##### Upload the documentation to the gh-pages branch of the repository.   #####

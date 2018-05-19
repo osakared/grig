@@ -54,7 +54,8 @@ git config user.name "Osaka Red Dæmon 😈"
 git config user.email "daemon@osakared.com"
 
 # Copy top-level documentation from the master branch
-cp ../*.md .
+# Need to go up two because it's organization/repo
+cp ../../*.md .
 
 # Remove everything currently in the gh-pages branch.
 # GitHub is smart enough to know which files have changed and which files have

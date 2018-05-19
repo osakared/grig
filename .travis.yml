@@ -18,7 +18,6 @@ node_js: 6
 
 os:
   - linux
-  - osx
   
 install:
   - npm install -g lix

@@ -92,7 +92,7 @@ if [ -d "api" ] && [ -f "api/index.html" ]; then
 
     # Only bother trying to commit and push if there are actually changes, which there isn't necessarily
 
-    if [[ ! `git status --porcelain` ]]; then
+    if [[ `git status --porcelain` ]]; then
 
         # Commit the added files with a title and description containing the Travis CI
         # build number and the GitHub commit reference that issued this build.

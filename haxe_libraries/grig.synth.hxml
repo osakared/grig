@@ -1,0 +1,3 @@
+# @install: lix --silent download "gh://github.com/osakared/grig.synth#cb0dc4db5b3118960c8ed374a20788388bf52696" into grig.synth/0.0.0/github/cb0dc4db5b3118960c8ed374a20788388bf52696
+-D grig.synth=0.0.0
+-cp ${HAXE_LIBCACHE}/grig.synth/0.0.0/github/cb0dc4db5b3118960c8ed374a20788388bf52696/src

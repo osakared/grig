@@ -2,4 +2,6 @@
 --macro include('grig')
 --no-output
 -lib grig.pitch
+-lib grig.synth
+-lib grig.midi
 -xml bin/doc.xml

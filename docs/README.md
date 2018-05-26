@@ -16,10 +16,10 @@ Grig is a set of small audio packages for haxe (and by extension, the langauges 
 Grig is designed to have as few dependencies and interdependencies as possible, so that you can use as much or as little of the functionality
 you need withing bringing in a heavy framework.
  
-+----------+ +-----------+ +-----------+ +-----------+
-|grig.midi | |grig.synth | |grig.audio | |grig.pitch |
-+----------+ +-----------+ +-----------+ +-----------+
-                \             ^
-                 ------------/
+    +----------+ +-----------+ +-----------+ +-----------+
+    |grig.midi | |grig.synth | |grig.audio | |grig.pitch |
+    +----------+ +-----------+ +-----------+ +-----------+
+                    \             ^
+                    ------------/
 
 See the [api documentation](/grig/api).

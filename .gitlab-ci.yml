@@ -1,0 +1,18 @@
+image: node:6.14.2
+
+variables:
+  GH_REPO_NAME: grig
+  GH_REPO_REF: gitlab.com/haxe-grig/grig.git
+
+before_script:
+ - npm install -g lix
+ - lix download
+
+build_docs:
+  only:
+   - master
+  script:
+   - haxe doc.hxml
+   - ./generate_documentation.sh
+  tags:
+    - docker

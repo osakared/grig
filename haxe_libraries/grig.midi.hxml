@@ -1,3 +1,3 @@
-# @install: lix --silent download "gh://github.com/osakared/grig.midi#03849e8769300576c8a044a85902dd3b2cf4334d" into grig.midi/0.0.0/github/03849e8769300576c8a044a85902dd3b2cf4334d
+# @install: lix --silent download "https://gitlab.com/haxe-grig/grig.midi/repository/archive.tar.gz?ref=03849e8769300576c8a044a85902dd3b2cf4334d&" into grig.midi/0.0.0/gitlab/03849e8769300576c8a044a85902dd3b2cf4334d
 -D grig.midi=0.0.0
--cp ${HAXE_LIBCACHE}/grig.midi/0.0.0/github/03849e8769300576c8a044a85902dd3b2cf4334d/src
+-cp ${HAXE_LIBCACHE}/grig.midi/0.0.0/gitlab/03849e8769300576c8a044a85902dd3b2cf4334d/src

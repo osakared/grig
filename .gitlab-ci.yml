@@ -8,11 +8,15 @@ before_script:
  - npm install -g lix
  - lix download
 
-build_docs:
+pages:
   only:
    - master
   script:
    - haxe doc.hxml
-   - ./generate_documentation.sh
-  tags:
-    - docker
+   - rm -rf public
+   - mkdir public
+   - cp -R docs/* public/
+   - lix run dox -i bin -o public/api
+  artifacts:
+    paths:
+     - public

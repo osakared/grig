@@ -23,14 +23,17 @@ you need withing bringing in a heavy framework.
 
 See the [api documentation](/grig/api).
 
-Capabilities:
+Target-specific Capabilities (all else is pure haxe and in principal all targets):
 
 | Target/Environment | Midi Hardware Support |
 | ------------------ | --------------------- |
-| python             | yes (python-rtmidi)   |
+| python             | ✅ (python-rtmidi)    |
 | c++                | planned (rtmidi)      |
 | hashlink           | planned (rtmidi)      |
 | c++/vst            | planned               |
+| c++/au             | planned               |
 | js/html5           | planned               |
-| js/nodejs          | planned (midi/rtmidi) |
-
+| js/nodejs          | planned ([midi](https://github.com/justinlatimer/node-midi))         |
+| java               | planned               |
+| c#                 | planned ([managed midi](https://github.com/atsushieno/managed-midi)) |
+| lua                | planned ([luamidi](https://github.com/luaforge/luamidi))             |

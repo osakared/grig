@@ -6,6 +6,10 @@ variables:
 
 before_script:
  - npm install -g lix
+ - lix install gitlab:haxe-grig/grig.audio
+ - lix install gitlab:haxe-grig/grig.midi
+ - lix install gitlab:haxe-grig/grig.pitch
+ - lix install gitlab:haxe-grig/grig.synth
  - lix download
 
 pages:

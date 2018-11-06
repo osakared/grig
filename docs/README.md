@@ -22,3 +22,15 @@ you need withing bringing in a heavy framework.
                     ------------/
 
 See the [api documentation](/grig/api).
+
+Capabilities:
+
+| Target/Environment | Midi Hardware Support |
+| ------------------ | --------------------- |
+| python             | yes (python-rtmidi)   |
+| c++                | planned (rtmidi)      |
+| hashlink           | planned (rtmidi)      |
+| c++/vst            | planned               |
+| js/html5           | planned               |
+| js/nodejs          | planned (midi/rtmidi) |
+

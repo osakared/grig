@@ -5,4 +5,20 @@
 -lib grig.midi
 -lib grig.pitch
 -lib grig.synth
+
 -xml bin/doc.xml
+
+# --each
+
+# --next
+# -xml bin/js.xml
+# -js dummy.js
+
+# --next
+# -xml bin/nodejs.xml
+# -lib hxnodejs
+# -js dummy.js
+
+# --next
+# -xml bin/python.xml
+# -python dummy.py

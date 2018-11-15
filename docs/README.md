@@ -33,11 +33,11 @@ Hardware Capabilities:
 | c++/au             |                     |                    |
 | c++/lv2            |                     |                    |
 | c++/fmod           | N/A                 |                    |
-| js/html5           |                     |                    |
-| js/nodejs          | :white_check_mark: ([node-midi](https://github.com/justinlatimer/node-midi))|                    |
+| js/html5           | ✅                  |                    |
+| js/nodejs          | ✅                  |                    |
 | java               |                     |                    |
 | c#                 | ([managed midi](https://github.com/atsushieno/managed-midi))        |                    |
 | c#/fmod            | N/A                 |                    |
 | lua                | ([luamidi](https://github.com/luaforge/luamidi))                    |                    |
-| python             | :white_check_mark:  |                    |
+| python             | ✅                  |                    |
 

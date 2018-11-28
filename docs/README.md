@@ -27,8 +27,8 @@ Hardware Capabilities:
 
 | Environment        | Midi IO             | Audio IO           |
 | ------------------ | ------------------- | ------------------ |
-| c++                | (rtmidi)            | (portaudio)        |
-| hashlink           | (rtmidi)            | (portaudio)        |
+| c++                | ✅                  | (rtaudio)          |
+| hashlink           | (rtmidi)            | (rtaudio)          |
 | c++/vst            |                     |                    |
 | c++/au             |                     |                    |
 | c++/lv2            |                     |                    |

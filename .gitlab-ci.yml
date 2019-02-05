@@ -5,7 +5,7 @@ variables:
   GH_REPO_REF: gitlab.com/haxe-grig/grig.git
 
 before_script:
- - npm install -g lix
+ - npm install -g lix@15.1.1
  - lix install gitlab:haxe-grig/grig.audio
  - lix install gitlab:haxe-grig/grig.midi
  - lix install gitlab:haxe-grig/grig.pitch

@@ -27,17 +27,17 @@ Hardware Capabilities:
 
 | Environment        | Midi IO             | Audio IO           |
 | ------------------ | ------------------- | ------------------ |
-| c++                | ✅                  | (rtaudio)          |
-| hashlink           | (rtmidi)            | (rtaudio)          |
+| c++                | ✅                  | ✅                 |
+| hashlink           | (rtmidi)            | (portaudio)        |
 | c++/vst            |                     |                    |
 | c++/au             |                     |                    |
 | c++/lv2            |                     |                    |
 | c++/fmod           | N/A                 |                    |
-| js/html5           | ✅                  |                    |
+| js/html5           | ✅                  | ✅                 |
 | js/nodejs          | ✅                  |                    |
 | java               |                     |                    |
 | c#                 | ([managed midi](https://github.com/atsushieno/managed-midi))        |                    |
 | c#/fmod            | N/A                 |                    |
 | lua                | ([luamidi](https://github.com/luaforge/luamidi))                    |                    |
 | python             | ✅                  |                    |
-
+| heaps              | N/A                 | ✅                 |

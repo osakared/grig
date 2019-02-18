@@ -39,5 +39,5 @@ Hardware Capabilities:
 | c#                 | ([managed midi](https://github.com/atsushieno/managed-midi))        |                    |
 | c#/fmod            | N/A                 |                    |
 | lua                | ([luamidi](https://github.com/luaforge/luamidi))                    |                    |
-| python             | ✅                  |                    |
+| python             | ✅                  | ✅                 |
 | heaps              | N/A                 | ✅                 |

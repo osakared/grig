@@ -1,4 +1,0 @@
-# @run: haxelib run-dir dox ${HAXE_LIBCACHE}/dox/1.1.0/haxelib
-# @install: lix --silent download "haxelib:dox#1.1.0" into dox/1.1.0/haxelib
--D dox=1.1.0
--cp ${HAXE_LIBCACHE}/dox/1.1.0/haxelib/

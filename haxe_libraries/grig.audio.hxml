@@ -1,0 +1,4 @@
+-D grig.audio=0.0.1
+# @install: lix --silent download "haxelib:/grig.audio#0.0.1" into grig.audio/0.0.1/haxelib
+-lib tink_core
+-cp ${HAXE_LIBCACHE}/grig.audio/0.0.1/haxelib/src

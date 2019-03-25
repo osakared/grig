@@ -1,8 +1,8 @@
 -main MonoSynth
 -cp examples/MonoSynth/src
--lib grig.midi
 -lib grig.synth
 -lib grig.audio
+-lib grig.midi
 -resource examples/MonoSynth/lead_pad.fmp@lead_pad.fmp
 
 --each
@@ -12,3 +12,7 @@
 --next
 
 -python bin/MonoSynth.py
+
+# --next
+
+# -cpp bin/MonoSynth

@@ -1,18 +1,23 @@
--main MonoSynth
--cp examples/MonoSynth/src
 -lib grig.synth
 -lib grig.audio
 -lib grig.midi
--resource examples/MonoSynth/lead_pad.fmp@lead_pad.fmp
 
---each
+# --each
 
--js examples/MonoSynth/bin/MonoSynth.js
-
---next
-
--python bin/MonoSynth.py
+# -js examples/MonoSynth/bin/MonoSynth.js
 
 # --next
 
+# -python bin/MonoSynth.py
+
+# --next
+
+# --debug
 # -cpp bin/MonoSynth
+#  --next
+
+-resource examples/FMSynth/lead_pad.fmp@lead_pad.fmp
+-main Main
+-cp examples/FMSynth/src
+--debug
+-cpp bin/FMSynth

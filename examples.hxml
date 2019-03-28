@@ -13,11 +13,14 @@
 # --next
 
 # --debug
+# -cp examples/MonoSynth/src
 # -cpp bin/MonoSynth
+# -main Main
+
 #  --next
 
 -resource examples/FMSynth/lead_pad.fmp@lead_pad.fmp
 -main Main
 -cp examples/FMSynth/src
---debug
+# --debug
 -cpp bin/FMSynth

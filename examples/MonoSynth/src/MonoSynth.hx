@@ -31,12 +31,11 @@ class MonoSynth
             return;
         }
         // High note priority
-        heldNotes.sort(function(x, y):Int {
-            if (x < y) return 1;
-            else if (x > y) return -1;
-            else return 0;
-        });
-        var frequency:Float = (440.0 / 32.0) * Math.pow(2.0, ((heldNotes[0] - 9.0) / 12.0));
+        var highestNote = 0;
+        for (note in heldNotes) {
+            if (note > highestNote) highestNote = note;
+        }
+        var frequency:Float = (440.0 / 32.0) * Math.pow(2.0, ((highestNote - 9.0) / 12.0));
         for (i in 0...output.channels[0].length) {
             output.channels[0][i] = Math.sin(phase * Math.PI);
             phase += frequency / sampleRate;

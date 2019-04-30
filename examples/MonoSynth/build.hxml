@@ -1,0 +1,19 @@
+-lib grig.synth
+-lib grig.audio
+-lib grig.midi
+
+-cp src
+-main Main
+
+--each
+
+-js bin/MonoSynth.js
+
+--next
+
+-python bin/MonoSynth.py
+
+--next
+
+# # --debug
+-cpp bin/MonoSynth

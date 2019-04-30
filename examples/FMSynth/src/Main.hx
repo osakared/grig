@@ -35,7 +35,7 @@ class Main
     private function audioCallback(input:grig.audio.AudioBuffer, output:grig.audio.AudioBuffer, sampleRate:Float, audioStreamInfo:grig.audio.AudioStreamInfo)
     {
         guardSynth(function() {
-            synth.render(output.channels[0], output.channels[1]);
+            synth.render(output);
         });
     }
 

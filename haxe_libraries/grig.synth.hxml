@@ -1,4 +1,5 @@
 -D grig.synth=0.0.1
 # @install: lix --silent download "gh://github.com/osakared/grig.synth#db41987daaa7881e088b09f3e95c2f7435c445cb" into grig.synth/0.0.1/github/db41987daaa7881e088b09f3e95c2f7435c445cb
 -lib grig.audio
--cp ${HAXE_LIBCACHE}/grig.synth/0.0.1/github/db41987daaa7881e088b09f3e95c2f7435c445cb/src
+# -cp ${HAXE_LIBCACHE}/grig.synth/0.0.1/github/db41987daaa7881e088b09f3e95c2f7435c445cb/src
+-cp /Users/pinkboi/src/grig.synth/src

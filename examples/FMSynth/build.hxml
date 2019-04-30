@@ -1,0 +1,17 @@
+-lib grig.synth
+-lib grig.audio
+-lib grig.midi
+
+-resource lead_pad.fmp@lead_pad.fmp
+
+-main Main
+
+-cp src
+
+# --each
+
+# -cpp bin/FMSynth
+
+# --next
+
+-python bin/FMSynth.py

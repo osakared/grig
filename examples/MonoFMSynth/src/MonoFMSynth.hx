@@ -70,7 +70,7 @@ class MonoFMSynth
         var frequency2:Float = frequency * 12.0;
         var frequency1:Float = 0.0;
         for (i in 0...output.channels[0].length) {
-            frequency1 = frequency + Math.sin(phase2 * 2.0 * Math.PI) * 500.0 * modEG.level;
+            frequency1 = frequency + Math.sin(phase2 * 2.0 * Math.PI) * 200.0 * modEG.level * (currentNote.velocity / 30.0);
             output.channels[0][i] = Math.sin(phase1 * 2.0 * Math.PI) * 0.8 * ampEG.level;
             ampEG.advance(1);
             modEG.advance(1);

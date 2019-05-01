@@ -23,7 +23,7 @@ class MonoFMSynth
     {
         sampleRate = _sampleRate;
         ampEG = new EnvelopeGenerator(0.01, 0.0, 1.0, 0.2, sampleRate);
-        modEG = new EnvelopeGenerator(0.0, 0.2, 0.5, 0.3, sampleRate);
+        modEG = new EnvelopeGenerator(0.0, 0.3, 0.1, 0.2, sampleRate);
     }
 
     public function parseMidi(midiMessage:MidiMessage):Void
@@ -67,7 +67,7 @@ class MonoFMSynth
             playing = false;
         }
         var frequency:Float = (440.0 / 32.0) * Math.pow(2.0, ((currentNote.pitch - 9.0) / 12.0));
-        var frequency2:Float = frequency * 8.0;
+        var frequency2:Float = frequency * 12.0;
         var frequency1:Float = 0.0;
         for (i in 0...output.channels[0].length) {
             frequency1 = frequency + Math.sin(phase2 * 2.0 * Math.PI) * 500.0 * modEG.level;

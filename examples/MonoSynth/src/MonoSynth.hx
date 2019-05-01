@@ -56,8 +56,8 @@ class MonoSynth
         var frequency:Float = (440.0 / 32.0) * Math.pow(2.0, ((currentNote - 9.0) / 12.0));
         var frequency2:Float = frequency * 1.01;
         for (i in 0...output.channels[0].length) {
-            // output.channels[0][i] = Math.sin(phase * Math.PI);
-            output.channels[0][i] = phase * 0.7 + phase2 * 0.7;//phase > 0.5 ? 1.0 : 0.0;
+            output.channels[0][i] = phase * 0.7 + phase2 * 0.7; // dual saw
+            // output.channels[0][i] = (phase > 0.5 ? 1.0 : 0.0) * 0.7 + (phase2 > 0.5 ? 1.0 : 0.0) * 0.7; // dual pulse
             if (stage == Attack) {
                 output.channels[0][i] *= i / output.channels[0].length;
             }

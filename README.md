@@ -5,4 +5,4 @@
 See the [haxe grig documentation](https://grig.tech/)
 
 Formerly the home of the grig documentation. That has now been moved to [grig.tech](https://gitlab.com/haxe-grig/grig.tech).
-This will probably be used later for example projects.
+This is now used for example projects.

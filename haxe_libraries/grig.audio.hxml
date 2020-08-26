@@ -1,4 +1,4 @@
--D grig.audio=0.0.3
-# @install: lix --silent download "haxelib:/grig.audio#0.0.3" into grig.audio/0.0.3/haxelib
+# @install: lix --silent download "https://gitlab.com/api/v4/projects/haxe-grig%2Fgrig.audio/repository/archive.zip?sha=361dff33830481668eb9293e94f857ca4a806899&" into grig.audio/0.0.5/gitlab/361dff33830481668eb9293e94f857ca4a806899
 -lib tink_core
--cp ${HAXE_LIBCACHE}/grig.audio/0.0.3/haxelib/src
+-cp ${HAXE_LIBCACHE}/grig.audio/0.0.5/gitlab/361dff33830481668eb9293e94f857ca4a806899/src
+-D grig.audio=0.0.5
